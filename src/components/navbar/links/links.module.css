@@ -1,0 +1,42 @@
+.links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logout{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color .1s ease-in-out, color 1.s ease-in-out;
+}
+.logout:hover{
+    background-color: var(--btn);
+    color: var(--white);
+}
+.menuButton,
+.mobileLinks{
+    display: none;
+}
+@media(max-width:768px){
+    .links{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+        cursor: pointer;
+    }
+    .mobileLinks{
+        position: absolute;
+        top: 100px; right: 0;
+        width: 50%; height: calc(100vh - 100px);
+        background-color: rgb(132, 74, 190);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        border-top-left-radius: 10px;
+    }
+}

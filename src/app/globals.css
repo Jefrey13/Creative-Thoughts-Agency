@@ -1,0 +1,30 @@
+:root{
+    --bg:#0d0c22;
+    --bgSoft: #2d2b42;
+    --text: white;
+    --textSoft: #e5e5e5;
+    --btn: #3673fd;
+}
+*{
+    margin: 0; padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+body{
+    background-color: var(--bg);
+    color: var(--text);
+}
+a{
+    color: inherit;
+}
+.container{
+     width: 90%;
+     margin: auto;
+     padding: 0 50px;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
